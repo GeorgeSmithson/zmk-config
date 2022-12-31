@@ -20,7 +20,7 @@
 // |  ESC    |  1  |  2  |  3   |  4   |  5   |                                    |  6   |  7    |  8    |  9   |   0   | NUBS |
 // |  TAB    |  Q  |  W  |  E   |  R   |  T   |                                    |  Y   |  U    |  I    |  O   |   P   | PLAY  |
 // |  SHIFT  |  A  |  S  |  D   |  F   |  G   |                                    |   H  |  J    |  K    |  L   |   ;   | NEXT  |
-// |  LCTRL  |  Z  |  X  |  C   |  V   |  B   |  MUTE  |            |  NEXT SONG   |  N   |  M    |  ,    |  .   |   /   | PREV  |
+// |  LCTRL  |  Z  |  X  |  C   |  V   |  B   |  MUTE  |            |  PRTSCRN  |  N   |  M    |  ,    |  .   |   /   | PREV  |
 //           | GUI | ALT | FN2 | FN1 | SPACE|                                        |ENTER |  UP   | DOWN  | LEFT | RIGHT |
             bindings = <
 &kp ESC     &kp N1  &kp N2   &kp N3   &kp N4    &kp N5                              &kp N6      &kp N7    &kp N8    &kp N9   &kp N0   &kp NUBS
@@ -30,7 +30,7 @@
         &kp LGUI    &kp LALT &mo 2    &mo 1     &mt DEL SPACE                  &mt RET BSPC     &kp UP    &kp DOWN  &kp LEFT &kp RIGHT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp DOWN UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
         };
 
         lower_layer {
