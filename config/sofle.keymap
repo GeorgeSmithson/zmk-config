@@ -11,9 +11,9 @@
 &left_encoder { resolution = <2>; };
 &right_encoder { resolution = <2>; };
 
-//&mt {
-//    tapping-term-ms = <100>;
-//};
+&mt {
+    tapping-term-ms = <100>;
+};
 
 / {
     keymap {
