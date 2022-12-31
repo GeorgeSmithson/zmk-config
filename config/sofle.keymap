@@ -46,13 +46,13 @@
 // TODO: Some binds are waiting for shifted keycode support.
 // ------------------------------------------------------------------------------------------------------------
 // |   F1  |  F2 |  F3 |  F4  |  F5  |  F6  |                       |  F7  |  F8   |  F9   |  F10 |  F11 |  F12 |
-// |       |     |     |      |      |      |                       |   -  |   +   |   =   |      |      |      |
+// |       |     |     |      |      |      |                       |   -  |   +   |   =   |   ~  |      |      |
 // |       |     |     |      |      |      |                       |  {   |  }    |   |   |   \  |      |      | 
 // |       |     |     |      |      |      |        |      |       |  [   |  ]    |   `   |      |      |      |
 //               |     |      |      |      |        |      |       |      |       |       |      |
             bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                       &kp F7    &kp F8      &kp F9      &kp F10     &kp F11   &kp F12
-&none   &none   &none   &none   &none   &none                        &kp MINUS &kp PLUS    &kp EQUAL   &none       &none       &none
+&none   &none   &none   &none   &none   &none                        &kp MINUS &kp PLUS    &kp EQUAL   &kp TILDE   &none       &none
 &none   &none   &none   &none   &none   &none                        &kp LBRC  &kp RBRC    &kp PIPE    &kp BSLH    &none       &none
 &none   &none   &none   &none   &none   &none  &trans       &trans   &kp LBKT  &kp RBKT    &kp GRAVE   &none       &none       &none
         &trans  &trans  &trans  &trans  &trans                       &trans    &trans      &trans      &trans      &trans
@@ -84,7 +84,7 @@
 // |  ESC    |  1  |  2  |  3   |  4   |  5   |                                    |  6   |  7    |  8    |  9   |   0   | L3    |
 // |  TAB    |  Q  |  W  |  F   |  P   |  B   |                                    |  J   |  L    |  U    |  Y   |   ;   | PLAY  |
 // |  SHIFT  |  A  |  R  |  S   |  T   |  G   |                                    |  M   |  N    |  E    |  I   |   O   | NEXT  |
-// |  LCTRL  |  Z  |  X  |  C   |  D   |  V   |  MUTE  |            |       |  K   |  H    |  ,    |  .   |   /   | PREV  |
+// |  LCTRL  |  Z  |  X  |  C   |  D   |  V   |  MUTE  |            |              |  K   |  H    |  ,    |  .   |   /   | PREV  |
 //           | GUI | ALT | CTRL | L FN | SPACE|                                    |BKSPC |  UP   | DOWN  | LEFT | RIGHT |
             bindings = <
 &kp ESC     &kp N1  &kp N2   &kp N3   &kp N4    &kp N5                              &kp N6      &kp N7    &kp N8    &kp N9   &kp N0     &tog 3
