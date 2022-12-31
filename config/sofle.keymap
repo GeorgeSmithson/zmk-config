@@ -12,7 +12,7 @@
 &right_encoder { resolution = <2>; };
 
 &mt {
-    tapping-term-ms = <100>;
+    tapping-term-ms = <1000>;
 };
 
 / {
