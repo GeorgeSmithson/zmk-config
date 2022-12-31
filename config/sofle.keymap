@@ -17,7 +17,7 @@
 #define COLEMAK   3
 
 &mt {
-    tapping-term-ms = <1000>;
+    tapping-term-ms = <300>;
 };
 
 / {
@@ -39,7 +39,7 @@
         &kp LGUI    &kp LALT &mo 2    &mo 1     &mt RET SPACE                  &mt DEL BSPC     &kp UP    &kp DOWN  &kp LEFT &kp RIGHT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp DOWN UP>;
         };
 
         LOWER {
@@ -58,7 +58,7 @@
         &trans  &trans  &trans  &trans  &trans                       &trans    &trans      &trans      &trans      &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp DOWN UP>;
         };
 
         UPPER {
@@ -76,7 +76,7 @@
             &trans          &trans          &trans          &trans          &trans                       &trans  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp DOWN UP>;
         };
 
         COLEMAK  {
