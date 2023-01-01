@@ -20,23 +20,25 @@
     tapping-term-ms = <300>;
 };
 
-td0: tap_dance_0 {
-    compatible = "zmk,behavior-tap-dance";
-    label = "TAP_DANCE_0";
-    #binding-cells = <0>;
-    tapping-term-ms = <200>;
-    bindings = <&kp SPACE>, <&kp DEL>;
-};
-
-td1: tap_dance_1 {
-    compatible = "zmk,behavior-tap-dance";
-    label = "TAP_DANCE_1";
-    #binding-cells = <0>;
-    tapping-term-ms = <200>;
-    bindings = <&kp BSPC>, <&kp RET>;
-};
-
 / {
+    behaviors {
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp SPACE>, <&kp DEL>;
+        };
+
+        td1: tap_dance_1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_1";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp BSPC>, <&kp RET>;
+        };
+    }
+    
     keymap {
         compatible = "zmk,keymap";
 
@@ -50,12 +52,12 @@ td1: tap_dance_1 {
             bindings = <
 &kp ESC     &kp N1  &kp N2   &kp N3   &kp N4    &kp N5                              &kp N6      &kp N7    &kp N8    &kp N9   &kp N0   &tog 3
 &kp TAB     &kp Q   &kp W    &kp E    &kp R     &kp T                               &kp Y       &kp U     &kp I     &kp O    &kp P    &kp C_PP
-&kp LSHFT   &mt LGUI A   &mt LALT S    &mt LCTRL D    &mt LSHFT F   &kp G           &kp H  &mt LSHFT J &mt LCTRL K &mt LALT L &kp SEMI &kp C_NEXT
+&kp LSHFT   &mt LGUI A   &mt LALT S   &mt LCTRL D &mt LSHFT F   &kp G               &kp H  &mt LSHFT J &mt LCTRL K &mt LALT L &kp SEMI &kp C_NEXT
 &kp LCTRL   &kp Z   &kp X    &kp C    &kp V     &kp B  &kp C_MUTE &none             &kp N       &kp M     &kp COMMA &kp DOT  &kp FSLH &kp C_PREV
         &kp LGUI    &kp LALT &mo 2    &mo 1     &td0                        &td1    &kp UP      &kp DOWN  &kp LEFT  &kp RIGHT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp DOWN UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;
         };
 
         LOWER {
@@ -74,7 +76,7 @@ td1: tap_dance_1 {
         &trans  &trans  &trans  &trans  &trans                       &trans    &trans      &trans      &trans      &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp DOWN UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;
         };
 
         UPPER {
@@ -92,7 +94,7 @@ td1: tap_dance_1 {
             &trans          &trans          &trans          &trans          &trans                       &trans  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp DOWN UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;
         };
 
         COLEMAK  {
@@ -105,12 +107,12 @@ td1: tap_dance_1 {
             bindings = <
 &kp ESC     &kp N1  &kp N2   &kp N3   &kp N4    &kp N5                              &kp N6      &kp N7    &kp N8    &kp N9   &kp N0     &tog 3
 &kp TAB     &kp Q   &kp W    &kp F    &kp P     &kp B                               &kp J       &kp L     &kp U     &kp Y    &kp SEMI   &kp C_PP
-&kp LSHFT   &mt LGUI A   &mt LALT R &mt LCTRL S &mt LSHFT T  &kp G       &kp M      &mt LSHFT N  &mt LCTRL E &mt LALT I  &mt LGUI O     &kp C_NEXT
+&kp LSHFT   &mt LGUI A   &mt LALT R &mt LCTRL S &mt LSHFT T  &kp G       &kp M      &mt LSHFT N &mt LCTRL E &mt LALT I  &mt LGUI O      &kp C_NEXT
 &kp LCTRL   &kp Z   &kp X    &kp C    &kp D     &kp V  &kp C_MUTE &none             &kp K       &kp H     &kp COMMA &kp DOT  &kp FSLH   &kp C_PREV
         &kp LGUI    &kp LALT &mo 2    &mo 1     &td0                        &td1    &kp UP      &kp DOWN  &kp LEFT  &kp RIGHT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp DOWN UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;
         };
     };
 };
