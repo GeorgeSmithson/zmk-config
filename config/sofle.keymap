@@ -37,7 +37,7 @@
             tapping-term-ms = <250>;
             bindings = <&kp BSPC>, <&kp RET>;
         };
-    }
+    };
 
     keymap {
         compatible = "zmk,keymap";
