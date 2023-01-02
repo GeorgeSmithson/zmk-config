@@ -57,7 +57,7 @@
         &kp LGUI    &kp LALT &mo 2    &mo 1     &td0                                &td1        &kp UP    &kp DOWN  &kp LEFT &kp RIGHT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp DOWN UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;
         };
 
         LOWER {
@@ -69,14 +69,14 @@
 // |       |     |     |      |      |      |        |      |       |  [   |  ]    |   ,   |   `  |      |      |
 //               |     |      |      |      |        |      |       |      |       |       |      |
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                       &kp F7    &kp F8      &kp F9      &kp F10     &kp F11   &kp F12
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                       &kp F7    &kp F8      &kp F9      &kp F10     &kp F11     &kp F12
 &none   &none   &none   &none   &none   &none                        &kp MINUS &kp PLUS    &kp EQUAL   &kp TILDE   &none       &none
 &none   &none   &none   &none   &none   &none                        &kp LBRC  &kp RBRC    &kp PIPE    &kp BSLH    &none       &none
-&none   &none   &none   &none   &none   &none  &trans       &trans   &kp LBKT  &kp RBKT    &kp APOS    &GRAVE      &none       &none
+&none   &none   &none   &none   &none   &none  &trans       &trans   &kp LBKT  &kp RBKT    &kp APOS    &kp GRAVE   &none       &none
         &trans  &trans  &trans  &trans  &trans                       &trans    &trans      &trans      &trans      &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp DOWN UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;
         };
 
         UPPER {
@@ -94,7 +94,7 @@
             &trans          &trans          &trans          &trans          &trans                       &trans  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp DOWN UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;
         };
 
         COLEMAK  {
@@ -112,7 +112,7 @@
         &kp LGUI    &kp LALT &mo 2    &mo 1     &td0                                &td1        &kp UP    &kp DOWN  &kp LEFT &kp RIGHT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp DOWN UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;
         };
     };
 };
